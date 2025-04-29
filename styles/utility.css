@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+}
+
+.grid-column-2 {
+    grid-template-columns: repeat(2);
+}
+
+.grid-column {
+    grid-auto-flow: column;
+}

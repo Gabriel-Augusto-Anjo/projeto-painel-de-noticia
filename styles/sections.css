@@ -5,3 +5,18 @@
         border-radius: 0.4rem;
     }
 }
+
+.card {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      inset: 0;
+      background: linear-gradient( /* essa função e linear e gradual, saindo de um ponto para o outro*/
+        180deg, /* angulação que eu quero*/
+        transparent 0%, /* a cor que eu quero iniciar */
+        #020617 100% /* a cor final e  porcentagem*/
+      );
+    }
+}

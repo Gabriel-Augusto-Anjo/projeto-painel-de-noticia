@@ -35,6 +35,10 @@ h1, h2, h3 {
     font: inherit;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     max-width: 128rem;
     padding-inline: 3.2rem;
@@ -48,4 +52,8 @@ a:hover {
 a {
     text-decoration: none;
     color: var(--text-color-primary);
+}
+
+main {
+    margin-top: 4.0rem;
 }

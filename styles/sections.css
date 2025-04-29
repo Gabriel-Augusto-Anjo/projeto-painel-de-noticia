@@ -1,4 +1,4 @@
-#featured {
+#destaque {
     img {
         object-fit: cover;
         height: 100%;
@@ -19,4 +19,11 @@
         #020617 100% /* a cor final e  porcentagem*/
       );
     }
+}
+
+#mais-lidos {
+    margin-block: 8.0rem;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 0.4rem;
 }

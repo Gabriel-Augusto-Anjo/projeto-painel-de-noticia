@@ -1,4 +1,27 @@
+.header {
+  border-top: 1px solid var(--stroke-color);
+  padding-block: 1.2rem 2.4rem;
+  font: var(--text-span);
+
+  a {
+    justify-self: end;
+    align-items: center;
+    gap: 0.8rem;
+
+    span {
+      background-image: url(../assets/icons/ArrowRightnormal.svg);
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+
+    &:hover span {
+      background-image: url(../assets/icons/ArrowRight.svg);
+    }
+  }
+}
+
 #destaque {
+  grid-area: destaque;
     img {
         object-fit: cover;
         height: 100%;
@@ -38,9 +61,67 @@
     }
 }
 
-#mais-lidos {
-    margin-block: 8.0rem;
-    object-fit: cover;
-    height: 100%;
+
+
+#maislidos {
+
+  grid-area: maislidos;
+
+  &>div {
+    display: grid;
+    grid-template-columns: repeat(4, 29.2rem);
+    gap: 1.6rem;
+  }
+
+  img {
+    height: 16.0rem;
     border-radius: 0.4rem;
+  } 
+  
+  figure {
+    position: relative;
+
+    .content-tag {
+      position: absolute;
+      top: 0.8rem;
+      left: 0.8rem;
+    }
+
+    p {
+      margin-top: 0.8rem;
+      font-weight: 800;
+    }
+  }
+}
+
+#ai {
+  grid-area: ai;
+  img {
+    width: 17.6rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-block: 0.8rem 0.4rem;
+  }
+}
+
+aside {
+  grid-area: aside;
+}
+
+#more {
+
+  margin-top: 3.2rem;
+
+  h3 {
+    margin-top: 0.8rem;
+  }
+
+  img {
+    width: 7.2rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
 }

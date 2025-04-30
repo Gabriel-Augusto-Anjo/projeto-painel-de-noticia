@@ -56,6 +56,15 @@ a {
 
 main {
     margin-top: 4.0rem;
+    row-gap: 8.0rem;
+    column-gap: 3.2rem;
+
+    grid-template-columns: 2fr 1.5fr;
+
+    grid-template-areas: 
+    "destaque destaque"
+    "maislidos maislidos"
+    "ai aside";
 }
 
 .text-h1 {

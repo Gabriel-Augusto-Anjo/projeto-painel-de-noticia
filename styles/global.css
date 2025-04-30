@@ -57,3 +57,30 @@ a {
 main {
     margin-top: 4.0rem;
 }
+
+.text-h1 {
+    font: var(--h1);
+}
+
+.text-h2 {
+    font: var(--h2);
+}
+
+.text-h3 {
+    font: var(--h3);
+}
+
+.text-sm {
+    font: var(--text-sm);
+}
+
+.content-tag {
+    display: inline-block;
+    background-color: var(--brand-color-dark);
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    font: 500 1.0rem/1.2 var(--font-family);
+    letter-spacing: 0.04em;
+    color: var(--text-color-primary);
+    box-shadow: 0rem 0.4rem 1.6rem #02061740;
+}

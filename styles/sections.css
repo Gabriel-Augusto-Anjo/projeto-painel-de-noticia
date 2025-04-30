@@ -8,6 +8,8 @@
 
 .card {
     position: relative;
+    border-radius: 0.4rem;
+    overflow: hidden;
     &::before {
       content: "";
       position: absolute;
@@ -18,6 +20,21 @@
         transparent 0%, /* a cor que eu quero iniciar */
         #020617 100% /* a cor final e  porcentagem*/
       );
+    }
+
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      padding: 2.0rem;
+
+      &:has(.text-h3) {
+        padding: 1.2rem;
+      }
+
+      h2 {
+        margin-top: 0.8rem;
+        
+      }
     }
 }
 
